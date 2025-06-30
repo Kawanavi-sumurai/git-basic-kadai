@@ -1,20 +1,26 @@
-PS C:\Users\shuns> cd git_challenge
+PS C:\Users\shuns\kadai_007> cd C:\Users\shuns\git_challenge
 PS C:\Users\shuns\git_challenge> git init
 Initialized empty Git repository in C:/Users/shuns/git_challenge/.git/
-PS C:\Users\shuns\git_challenge> git add hello_world.txt
-PS C:\Users\shuns\git_challenge> git commit -m "hello_world.txtを追更"  
-[main (root-commit) c014337] hello_world.txtを追更
- 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\shuns\git_challenge> git add C:\Users\shuns\git_challenge
+PS C:\Users\shuns\git_challenge> git commit -m "hello_world.txtを追加
+>> "
+[main (root-commit) 08069d7] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
  create mode 100644 hello_world.txt
+PS C:\Users\shuns\git_challenge> git add .
 PS C:\Users\shuns\git_challenge> git commit -m "日本語訳を追記"
-On branch main
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   hello_world.txt
+[main 7f78af3] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\shuns\git_challenge> git log
+commit 7f78af39b25412ec6fbf909df9c57f21361e99e5 (HEAD -> main)
+Author: Kawanavi-sumurai <shunsuke.soccer.1225@gmail.com>
+Date:   Tue Jul 1 08:52:47 2025 +0900
 
-no changes added to commit (use "git add" and/or "git commit -a")
-PS C:\Users\shuns\git_challenge> git log --oneline
-c014337 (HEAD -> main) hello_world.txtを追更
-PS C:\Users\shuns\git_challenge> cd C:\Users\shuns                  
-PS C:\Users\shuns> mkdir kadai_005
+    日本語訳を追記
+
+commit 08069d711e39fdce5c6b47b008297cd5be88e908
+Author: Kawanavi-sumurai <shunsuke.soccer.1225@gmail.com>
+Date:   Tue Jul 1 08:51:40 2025 +0900
+
+    hello_world.txtを追加
+PS C:\Users\shuns\git_challenge> 
